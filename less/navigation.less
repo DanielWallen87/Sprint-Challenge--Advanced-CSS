@@ -1,1 +1,22 @@
 // Navigation code here
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .nav-bar {
+        display: flex;
+
+        nav {
+            justify-content: center;
+
+            a {
+                margin-right: 20px;
+                color: black;
+                .nav-transform();
+            }  
+        }
+    }
+}

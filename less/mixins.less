@@ -1,1 +1,35 @@
 // Mixins Here
+
+.nav-transform(@background: white, @transition: 2s) {
+    background: @background; 
+    transition: @transition;
+
+    &:hover {
+        color: skyblue;
+        -webkit-text-stroke-width: 0.25px;
+        -webkit-text-stroke-color: black;
+        cursor: pointer;
+    }
+}
+
+.button-transform(@bg-color: black, @height: 50px, @width: 200px, @font: white) {
+    height: @height;
+    width: @width;
+    background: @bg-color;
+    color: @font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 2rem;
+    transition: 1s;
+
+    &:hover {
+        background: @font;
+        color: @bg-color;
+        cursor: pointer;
+    }
+}
+
+// I hope "button-transform" counts as one of two mixins. The only other thing I'd use one for in reality is flex properties, 
+// but they're all too varied for that to be helpful in this case. Unless I just made one for display:flex, which sounds silly.
