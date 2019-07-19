@@ -11,3 +11,22 @@
         cursor: pointer;
     }
 }
+
+.button-transform(@bg-color: black, @height: 50px, @width: 200px, @font: white) {
+    height: @height;
+    width: @width;
+    background: @bg-color;
+    color: @font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 2rem;
+    transition: 1s;
+
+    &:hover {
+        background: @font;
+        color: @bg-color;
+        cursor: pointer;
+    }
+}
