@@ -175,6 +175,9 @@ a {
 }
 .nav-menu .nav-bar {
   display: flex;
+  position: fixed;
+  overflow: hidden;
+  opacity: 2;
 }
 .nav-menu .nav-bar nav {
   justify-content: center;
